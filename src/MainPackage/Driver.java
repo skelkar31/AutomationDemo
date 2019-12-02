@@ -10,9 +10,11 @@ public class Driver {
     public static void main(String[] args) throws Exception {
         // TODO Auto-generated method stub
 
-        String filepath = "/Users/swapnilkelkar/Desktop/TestCases.xlsx";
+        String home = System.getProperty("user.home");
 
-        // Call ExcelUtils to get Excel details
+        String filepath = home+"/Desktop/AutomationDemo/src/resource/TestCases.xlsx";
+
+        // Call ExcelUtils to get Excel detail
         ExcelUtiles.setExcelFile(filepath, "Sheet1");
         int LastRow = 0;
 
